@@ -1,1 +1,1 @@
-POC Token contract
+PostCrypto Token contract 
