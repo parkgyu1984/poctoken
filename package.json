@@ -1,0 +1,42 @@
+{
+  "name": "poctoken",
+  "version": "1.0.0",
+  "description": "POC Token contract",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parkgyu1984/poctoken.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "truffle": "5.0.2",
+    "truffle-contract": "3.0.6",
+    "nodemon": "^1.17.3",
+    "bootstrap": "4.1.3",
+    "chai": "^4.1.2",
+    "chai-bignumber": "^2.0.2",
+    "chai-as-promised": "^7.1.1",
+    "lite-server": "^2.3.0"
+  },
+  "bugs": {
+    "url": "https://github.com/parkgyu1984/poctoken/issues"
+  },
+  "homepage": "https://github.com/parkgyu1984/poctoken#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.4",
+    "ethereumjs-tx": "^2.1.1",
+    "express": "^4.17.1",
+    "openzeppelin-solidity": "^2.4.0",
+    "web3": "^1.2.4",
+    "websocket": "^1.0.30"
+  }
+}

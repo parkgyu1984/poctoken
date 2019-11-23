@@ -1,0 +1,18 @@
+1) run geth (cmd)
+geth --networkid 15 --nodiscover --maxpeers 0 --datadir "D:\96.geth\data_testnet" --mine --minerthreads 1 --rpc --rpcaddr "localhost" --rpcport 8123 --rpccorsdomain "*" --rpcvhosts "*" --rpcapi "admin, db, eth, debug, miner, net, shh, txpool, personal, web3" --allow-insecure-unlock
+
+2) 계정잠금해제
+node web\unlock.js 
+
+3) 컴파일
+truffle complie
+
+4) Deploy
+truffle migrate --reset
+
+5) contract address 복사/붙여넣기
+
+6) abi 복사/붙여넣기
+
+7) 웹서버구동
+nodemon web\server.js
