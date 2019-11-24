@@ -692,48 +692,26 @@ module.exports = function(app)
     }
 
     /**
-     * get
+     * send url
      */
-    app.get('/', function(req, res) {
-        getTransactionCount(coinbase);
-        //getBalaceToken(coinbase);
-        //sendToken(coinbase, account1, "100000");
-        //sendToken(coinbase, account2, "100000");
-        //getBalace(coinbase);
-        //send(coinbase, account2, "1000");
-
-        //burnFrom(coinbase, "100000");
-
-        res.send("");
-    });
-
     app.get('/send', function(req, res) {
       sendToken(coinbase, account1, "100");
       res.send({ isSuccess : true });
     });
 
-    /**
-     * send eth
+     /**
+     * test get
      */
-    app.get('/send', function(req, res) {
-        var contract = new web3.eth.Contract(abiArray, contractAddr);
-        var result = 0;
-        getTransactionCount().then(function(count) { 
-            result = count;
-            console.log(result);
-        });
-    });
+    app.get('/', function(req, res) {
+      //getTransactionCount(coinbase);
+      //getBalaceToken(coinbase);
+      //sendToken(coinbase, account1, "100000");
+      //sendToken(coinbase, account2, "100000");
+      //getBalace(coinbase);
+      //send(coinbase, account2, "1000");
 
-    /**
-     * sleep
-     * @param {*} delay 
-     */
-    function sleep(delay) {
-        var start = new Date().getTime();
-        while (new Date().getTime() < start + delay);
-    }
+      //burnFrom(coinbase, "100000");
 
-    // app.get('/about',function(req,res){
-    //     res.render('about.html');
-    // });
+      res.send("");
+  });
 }
