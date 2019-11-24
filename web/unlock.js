@@ -12,6 +12,3 @@ web3.eth.getAccounts().then(function(accounts) {
         web3.eth.personal.unlockAccount(accounts[i], PASS, DURATION).then(console.log);
     }
 });
-
-//web3.eth.personal.unlockAccount("0xEeA3dA365eAbC00F424e8afB6f6F7750bFFB1203", "qkrrb84!@");
-//web3.eth.personal.unlockAccount("0x6Ed87257208ea0B244caA90c723002f930630ba9", "qkrrb84!@");
